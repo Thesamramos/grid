@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards {
+    padding: 1.5rem;
+}
+
+.cards-col-span2 {
+    grid-column: span 2;
+}
+
+.cards-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card:nth-child(3){
+    grid-row: span 2;
+}
+
+.card {
+    background-color: gray;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.card p {
+    font-size: 1.2rem;
+    margin: 10px;
+}
